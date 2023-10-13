@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="favicon" href="favicon-snake.png">
+</head>
+<body>
+    
+    <h1>Score: <span class="pontuação">00</span></h1>
+    <div class="menu_start">
+        <h1>Snake Game</h1>
+        <button class="play">Play</button>
+        <button class="high-Score">High Score</button>
+    </div>
+    
+    
+    <div class="menu_death">
+        <h1>You Died 💀</h1>
+        <button class="play-again">Play Again 🎮</button>
+        <button class="backToMenu">Back To Menu </button>
+    </div>
+    
+    <div class="menu_score">
+        <h1>High Score 🏆:<span class="max_point">0</span></h1>
+        <button class="backMenu2">Back To Menu </button>
+    </div>
+
+    <div class="menu_difficulty">
+        <h1 class="titulo-difficulty">Difficulty</h1>
+        <button class="btnMenu" id="easy">Easy</button>
+        <button class="btnMenu" id="medium">Medium</button>
+        <button class="btnMenu" id="hard">Hard</button>
+
+    </div>
+
+    <!-- canvas é uma tag utilizada para desenho. -->
+    <canvas width="600" height="600"></canvas>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

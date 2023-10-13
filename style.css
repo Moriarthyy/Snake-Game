@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* estilizações da pagina */
+body {
+    background-color: rgb(226, 180, 180);
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* cor do background do campo do jogo */
+canvas {
+    background: #080808
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.pontuação {
+    font-weight: 700;
+    font-size: 4.5rem;
+    display: block;
+    margin-top: -10px;
+}
+.menu_death {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    border-radius: 30px;
+}
+.play-again{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    transition: 0.3s ease-out;
+}
+.menu_start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu_start h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.play {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.backToMenu {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    transition: 0.3s ease-out;
+}
+
+.play:hover{
+    background-color: rgba(30, 126, 54, 0.966);
+}
+.backToMenu:hover{
+    background-color: rgba(30, 126, 54, 0.966);
+}
+.play-again:hover {
+    background-color: rgba(30, 126, 54, 0.966);
+}
+.high-Score:hover{
+    background-color: rgba(30, 126, 54, 0.966);
+    opacity: 2;
+}
+
+.high-Score {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.menu_score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: none;
+    flex-direction: column;
+    
+}
+.backMenu2 {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    transition: 0.3s ease-out;
+}
+.btnMenu{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4caf50;
+    color: black;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    transition: 0.3s ease-out;
+}
+.btnMenu:hover {
+    background-color: rgba(30, 126, 54, 0.966);
+}
+.menu_difficulty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+#easy {
+    background-color: #4caf50;
+}
+#medium {
+    background-color: rgb(255, 238, 0);
+}
+#hard {
+    background-color: rgb(247, 33, 33);
+}
+#easy:hover{
+    background-color: rgba(30, 126, 54, 0.966);
+}
+#medium:hover {
+    background-color: rgb(233, 187, 35);
+}
+#hard:hover {
+    background-color: rgb(170, 17, 17);
+}
+
